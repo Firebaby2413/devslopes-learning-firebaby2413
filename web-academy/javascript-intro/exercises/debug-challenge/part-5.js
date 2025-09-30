@@ -33,13 +33,17 @@ if (energyLevel >= 24000) {
    readyToSkate = false;
 }
 
-if (crewStatus && cameraBattery === "green"){
+// console.log(readyToSkate);
+
+if (readyToSkate && crewStatus && cameraBattery === "green"){
    console.log("Crew & cameraBattery is a go!");
    readyToSkate = true;
 } else {
    console.log("WARNING: Crew or cameraBattery not ready!");
    readyToSkate = false;
 }
+
+// console.log(readyToSkate);
 
 if (readyToSkate) {
    console.log("Let's goooooo!");
